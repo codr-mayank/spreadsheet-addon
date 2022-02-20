@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react';
 
 const CreateSheet = (props) => {
@@ -5,7 +6,12 @@ const CreateSheet = (props) => {
 
   return (
     <div>
-      <button disabled={!data.length}>Create Sheet</button>
+      <Button
+        variant="contained"
+        disabled={!data.length}
+      >
+        Create Sheet
+      </Button>
     </div>
   );
 };

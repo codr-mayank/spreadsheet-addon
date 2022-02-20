@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import axios from 'axios';
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
@@ -20,12 +21,13 @@ const GetData = (props) => {
 
   return (
     <div>
-      <button
-        className={isButtonDisabled ? 'getDataButton disabledButton' : 'getDataButton'}
+      <Button
+        variant="contained"
+        onClick={handleGetData}
         disabled={isButtonDisabled}
-        onClick={handleGetData}>
+      >
         Get Data
-      </button>
+      </Button>
       <CreateSheet data={data} />
     </div>
   );
