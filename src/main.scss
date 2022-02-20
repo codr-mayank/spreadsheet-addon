@@ -1,3 +1,19 @@
-.helloWorld {
-  // color: rgb(175, 0, 255);
+.App {
+  font-family: sans-serif;
+
+  .getDataButton {
+    padding: 0.5% 1%;
+    border: 1px solid darkgray;
+    background: #99ff89;
+    border-radius: 4px;
+    color: #565656;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .disabledButton {
+    cursor: not-allowed;
+    background: #aaff99;
+    color: #868686;
+  }
 }
