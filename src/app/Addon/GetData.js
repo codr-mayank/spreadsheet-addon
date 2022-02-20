@@ -14,13 +14,12 @@ const GetData = (props) => {
       if (res && res.status === 200) {
         setData(res.data);
         toast.success('Data fetched!');
-        toast.info('Click "Create Sheet" to continue');
       }
     });
   };
 
   return (
-    <div>
+    <div className="sheetButtonContainer">
       <Button variant="contained" onClick={handleGetData} disabled={isButtonDisabled}>
         Get Data
       </Button>

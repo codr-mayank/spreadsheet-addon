@@ -1,19 +1,19 @@
 .App {
   font-family: sans-serif;
 
-  .getDataButton {
-    padding: 0.5% 1%;
-    border: 1px solid darkgray;
-    background: #99ff89;
-    border-radius: 4px;
-    color: #565656;
-    font-size: 16px;
-    cursor: pointer;
+  .heading {
+    text-align: center;
+    margin-bottom: 5%;
   }
 
-  .disabledButton {
-    cursor: not-allowed;
-    background: #aaff99;
-    color: #868686;
+  .buttonContainer {
+    display: flex;
+    justify-content: space-around;
+
+    .sheetButtonContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 45%;
+    }
   }
 }

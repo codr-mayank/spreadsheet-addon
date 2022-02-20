@@ -34,20 +34,27 @@ const Addon = () => {
 
   return (
     <div>
-      {showLogin && (
-        <GoogleLogin
-          clientId={clientId}
-          buttonText="Login with Google"
-          onSuccess={onLoginSuccess}
-          onFailure={onLoginFailure}
-          cookiePolicy={'single_host_origin'}
-        />
-      )}
-      {showLogout && (
-        <GoogleLogout clientId={clientId} buttonText="Logout" onLogoutSuccess={onLogoutSuccess} />
-      )}
-      <GetData isButtonDisabled={showLogin} />
-      <ToastContainer />
+      <div className="heading">
+        <h1>Welcome to Spreadsheet Add-on</h1>
+      </div>
+      <div className="buttonContainer">
+        {showLogin && (
+          <GoogleLogin
+            clientId={clientId}
+            buttonText="Login with Google"
+            onSuccess={onLoginSuccess}
+            onFailure={onLoginFailure}
+            cookiePolicy={'single_host_origin'}
+          />
+        )}
+        {showLogout && (
+          <GoogleLogout clientId={clientId} buttonText="Logout" onLogoutSuccess={onLogoutSuccess} />
+        )}
+        <GetData isButtonDisabled={showLogin} />
+      </div>
+      <div>
+        <ToastContainer position="bottom-right" />
+      </div>
     </div>
   );
 };
