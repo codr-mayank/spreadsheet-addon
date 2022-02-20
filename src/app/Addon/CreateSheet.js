@@ -6,10 +6,7 @@ const CreateSheet = (props) => {
 
   return (
     <div>
-      <Button
-        variant="contained"
-        disabled={!data.length}
-      >
+      <Button variant="contained" disabled={!data.length}>
         Create Sheet
       </Button>
     </div>

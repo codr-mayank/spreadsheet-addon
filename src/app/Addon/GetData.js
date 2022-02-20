@@ -21,11 +21,7 @@ const GetData = (props) => {
 
   return (
     <div>
-      <Button
-        variant="contained"
-        onClick={handleGetData}
-        disabled={isButtonDisabled}
-      >
+      <Button variant="contained" onClick={handleGetData} disabled={isButtonDisabled}>
         Get Data
       </Button>
       <CreateSheet data={data} />
